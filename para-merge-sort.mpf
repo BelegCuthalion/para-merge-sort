@@ -1,0 +1,3 @@
+program paraMergeSort;
+architecture shared (8);
+const n=8;
