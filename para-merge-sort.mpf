@@ -2,5 +2,5 @@ program paraMergeSort;
 architecture shared (8);
 const n=8;
 
-var arr, sorted: array[0..n-1] of real;
+var arr, temp: array[0..n-1] of real;
 i, j: integer;
