@@ -43,6 +43,6 @@ begin
 	for i:=0 to n-1 do
 		Readln(arr[i]);
 	paraMergeSort(0, n-1);
-	for i:=0 to n-1 do
-		Writeln(arr[i]);
+	(*for i:=0 to n-1 do
+		Writeln(arr[i]);*)
 end.
