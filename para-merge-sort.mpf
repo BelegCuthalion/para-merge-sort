@@ -17,8 +17,16 @@ begin
 			if index>k then
 				rank := rank + 1;
 	end;
-	writeln('[', index, '] = ', arr[index], ' => [', index+rank-first, ']');
-	temp[index+rank-first] := arr[index];
+	if index>isoFirst then
+	begin
+		writeln('[', index, '] = ', arr[index], ' => [', index+rank-first+isoFirst, ']');
+		temp[index+rank-first+isoFirst] := arr[index];
+	end
+	else if index<isoFirst then
+	begin
+		writeln('[', index, '] = ', arr[index], ' => [', index+rank, ']');
+		temp[index+rank] := arr[index];
+	end;
 end;
 
 procedure paraMergeSort(first, last: integer);
