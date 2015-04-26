@@ -18,15 +18,9 @@ begin
 				rank := rank + 1;
 	end;
 	if index>isoFirst then
-	begin
-		writeln('[', index, '] = ', arr[index], ' => [', index+rank-first+isoFirst, ']');
-		temp[index+rank-first+isoFirst] := arr[index];
-	end
+		temp[index+rank-first+isoFirst] := arr[index]
 	else if index<isoFirst then
-	begin
-		writeln('[', index, '] = ', arr[index], ' => [', index+rank, ']');
-		temp[index+rank] := arr[index];
-	end;
+		temp[index+rank] := arr[index];	
 end;
 
 procedure paraMergeSort(first, last: integer);
@@ -47,7 +41,6 @@ begin
 	for i:=first to last do
 	begin
 		arr[i] := temp[i];
-		writeln('[', i, '] = ', arr[i], ' <= ', temp[i]);
 	end;
 end;
 
