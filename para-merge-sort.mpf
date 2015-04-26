@@ -47,7 +47,7 @@ end;
 begin
 	for i:=0 to 7 do
 		Readln(arr[i]);
-	paraMergeSort(0, n-1);
+	paraMergeSort(0, 7);
 	Writeln(arr[0]);
 	Writeln(arr[1]);
 	Writeln(arr[2]);
