@@ -37,7 +37,10 @@ begin
 	
 	
 	for i:=first to last do
+	begin
 		arr[i] := temp[i];
+		writeln('[', i, '] = ', arr[i], ' <= ', temp[i]);
+	end;
 end;
 
 begin
