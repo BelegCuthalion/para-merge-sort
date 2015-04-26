@@ -10,12 +10,12 @@ var rank, mid: integer;
 begin
 	rank := 0;
 	mid := (first + last) div 2;
-	if index > mid then
+	(*if index > mid then
 		while arr[mid+1]=arr[mid] do
 			mid := mid + 1
 	else
 		while arr[mid-1]=arr[mid] do
-			mid := mid - 1;
+			mid := mid - 1;*)
 	if arr[index] > arr[mid] then
 	begin
 		rank := rank + mid - first + 1;
