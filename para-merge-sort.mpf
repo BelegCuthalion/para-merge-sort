@@ -1,8 +1,8 @@
 program paraMergeSort;
 architecture shared (8);
-const n=8;
+(*const n=8;*)
 
-var arr, temp: array[0..n-1] of real;
+var arr, temp: array[0..7] of real;
 i, j: integer;
 
 procedure putInPlace(index, first, isoFirst, isoLast: integer);
@@ -45,7 +45,7 @@ begin
 end;
 
 begin
-	for i:=0 to n-1 do
+	for i:=0 to 7 do
 		Readln(arr[i]);
 	paraMergeSort(0, n-1);
 	Writeln(arr[0]);
