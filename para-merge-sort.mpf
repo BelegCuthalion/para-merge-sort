@@ -29,9 +29,9 @@ begin
 		paraMergeSort(first, mid);
 		paraMergeSort(mid+1, last);
 	end;
-	fork forall i:=first to mid do
+	forall i:=first to mid do
 		putInPlace(i, first, mid+1, last);
-	fork forall j:=mid+1 to last do
+	forall j:=mid+1 to last do
 		putInPlace(j, mid+1, first, mid);
 	join;
 	join;
